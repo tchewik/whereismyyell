@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Добро пожаловать на сайт лучшего ЛГБТ-сообщества в сети</title>
 	<link rel="stylesheet"
 		  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet"
@@ -10,53 +11,104 @@
 		  href="css/styles.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  	<script src="js/script.js"></script>
 </head>
-<body>
-	<div class="container">
-		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Максим Горький</a>
+
+<body class="index-body">
+	<div class="container index-header"><h1>Какой сегодня день?</h1></div>
+
+	<div class="btn-group btn-group-justified" role="group">
+		<!-- Понедельник -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-danger smart-btn-width enabled dropdown-toggle btn-lg" data-toggle="dropdown">
+				<span class="caret"></span>
+				Понедельник</button>
+				<ul class="dropdown-menu" role="menu">
+				<li id="index_day1" class="enabled"><a href="day1.html"> 
+				8 февраля</a>
+				</li>
+				<li class="disabled"><a href="#">
+				15 февраля</a>
+				</li>
+				</ul>
+
+		</div>
+		<!-- Вторник -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-warning smart-btn-width enabled dropdown-toggle btn-lg" data-toggle="dropdown">
+				<span class="caret"></span>
+					Вторник</button>
+					<ul class="dropdown-menu" role="menu">
+					<li class="enabled"><a href="day2.html"> 
+					9 февраля<span class="label label-default">Создать</span></a></li>
+					<li class="disabled"><a href="#">
+					16 февраля</a></li>
+					</ul>
 			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Очень кратко</a></li>
+
+		<!-- Среда -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-yellow smart-btn-width disabled dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			Среда</button>
+			<ul class="dropdown-menu" role="menu">
+			<li class="disabled"><a href="#"> 
+			10 февраля</a></li>
+			<li class="disabled"><a href="#">
+			17 февраля</a></li>
 			</ul>
-		</nav>
-
-		<div class="row wrapper">
-			<div id="imgDiv" class="col-xs-12">
-					<img id="imgMain" src="img/imgMain0.jpg"></img>
-			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-md-4">
-				<h3>О Есенине</h3>
-				<img id="yesenin" src="img/yesenin.jpg" class="img-rounded thumbs" width="100%"></img>
-			</div>
-			<div class="col-md-4">
-				<h3>А был ли мальчик?</h3>
-				<img id="hlamida" src="img/hlamida.jpg" class="img-rounded thumbs" width="100%"></img>
-			</div>
-			<div class="col-md-4">
-				<h3>Цельтесь в голову!</h3>
-				<img id="suicide" src="img/suicidehero.jpg" class="img-rounded thumbs" width="100%"></img>
-			</div>
+			<!-- Четверг -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-success smart-btn-width disabled dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			Четверг</button>
+			<ul class="dropdown-menu" role="menu">
+			<li class="disabled"><a href="#"> 
+			11 февраля</a></li>
+			<li class="disabled"><a href="#">
+			18 февраля</a></li>
+			</ul>
 		</div>
 
-		<div class="row">
-			<div id="mainTxtDiv" class="col-xs-12">
-				<p id="text" class="mainTxt"></p>
-			</div>
+		<!-- Пятница -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-info smart-btn-width disabled dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			Пятница</button>
+			<ul class="dropdown-menu" role="menu">
+			<li class="disabled"><a href="#"> 
+			12 февраля</a></li>
+			<li class="disabled"><a href="#">
+			19 февраля</a></li>
+			</ul>
 		</div>
 
-		<footer class="container-fluid text-center footer">
-			<p>
-				<br>
-				<a href="https://vk.com/tchewik" target="_blank">Елена Чистова</a>
-				</br>
-			</p>
-		</footer>
+		<!-- Суббота -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-primary smart-btn-width disabled dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			Суббота</button>
+			<ul class="dropdown-menu" role="menu">
+			<li class="disabled"><a href="#"> 
+			13 февраля</a></li>
+			<li class="disabled"><a href="#">
+			20 февраля</a></li>
+			</ul>
+		</div>
+
+		<!-- Воскресенье -->
+		<div class="btn-group smart-btn-width">
+			<button type="button" class="btn btn-purple smart-btn-width disabled dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			Воскресенье</button>
+			<ul class="dropdown-menu" role="menu">
+			<li class="disabled"><a href="#"> 
+			14 февраля</a></li>
+			<li class="disabled"><a href="#">
+			21 февраля</a></li>
+		</ul>
+		</div>
 	</div>
 </body>
 </html>
