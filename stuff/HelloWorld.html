@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HelloWorld.java</title>
+<meta charset="UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST0 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST2 {color: #009900}
+.ST1 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST3 {color: #009900; font-family: Monospaced; font-style: italic}
+.ST4 {font-family: Monospaced; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<pre>
+<span class="comment">/*  </span>
+<span class="comment">– В методе main() объявить действительную квадратную матрицу А порядка n. </span>
+<span class="comment">Значение n и элементы матрицы передать из командной строки.</span>
+<span class="comment">     –  Добавить в тот же класс метод, который формирует матрицу В</span>
+<span class="comment">того же порядка,  все элементы которой единичны.</span>
+<span class="comment">*/</span>
+
+<span class="literal">package</span> helloworld;
+<span class="literal">import</span> java.util.Scanner;
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">HelloWorld</span> {
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">int</span>[][] <span class="ST1">createB</span>(<span class="literal">int</span> size){
+        <span class="literal">int</span> B[][] = <span class="literal">new</span> <span class="literal">int</span>[size][size];
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; size; i++)
+            <span class="literal">for</span> (<span class="literal">int</span> j = 0; j &lt; size; j++)
+                B[i][j] = 1;
+        <span class="literal">return</span> B;
+    }
+    
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">printMatr</span>(<span class="literal">int</span>[][] matr){
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; matr.<span class="ST2">length</span>; i++){
+            <span class="literal">for</span> (<span class="literal">int</span> j = 0; j &lt; matr.<span class="ST2">length</span>; j++){
+                System.<span class="ST3">out</span>.print(matr[i][j]);
+                System.<span class="ST3">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+            }
+            System.<span class="ST3">out</span>.println();
+        }        
+    }
+    
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">main</span>(String[] args) {
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Введите размер квадратной матрицы</span><span class="string">&quot;</span>); <span class="comment">//printf()</span>
+        Scanner in = <span class="literal">new</span> Scanner(System.<span class="ST3">in</span>);
+        <span class="literal">int</span> size;
+        size = in.nextInt();
+        
+        <span class="comment">// Создание квадратной матрицы размера n</span>
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Введите содержимое матрицы</span><span class="string">&quot;</span>);
+        <span class="literal">int</span> A[][] = <span class="literal">new</span> <span class="literal">int</span>[size][size];
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; size; i++)
+            <span class="literal">for</span> (<span class="literal">int</span> j = 0; j &lt; size; j++)
+                A[i][j] = in.nextInt();
+        
+        <span class="comment">// Создание матрицы-ответа</span>
+        <span class="literal">int</span> B[][] = <span class="ST4">createB</span>(size);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Единичная матрица того же размера:</span><span class="string">&quot;</span>);
+        <span class="ST4">printMatr</span>(B);
+    }
+}
+</pre></body>
+</html>

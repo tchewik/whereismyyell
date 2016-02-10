@@ -194,7 +194,7 @@ fieldset[disabled] .btn-purple.active {
 	border-radius: 0;
 }
 .muladhara .navbar-nav li a:hover, 
-.muladhara .navbar-nav li .active a {
+.muladhara .navbar-nav li a .active{
 	color: #c12e2a !important;
 	background-color: #fff !important;
 }

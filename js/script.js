@@ -22,10 +22,28 @@ function setColorsSubjectsETC(todayis){
 	$("body").addClass(todayis);
 	var navbarcontent = "";
 	for (i = 0; i < nameOfDay[todayis][1].length; i++){
-		navbarcontent += '<li><a href="#section' + (i+1) + '">' + nameOfDay[todayis][1][i] + '</a></li>';
+		navbarcontent += '<li><a id="linktosection' + (i+1) + '" href="#section' + (i+1) + '">' + nameOfDay[todayis][1][i] + '</a></li>';
 	}
 	$("#subNavBar").html(navbarcontent);
+	for (i = 0; i < nameOfDay[todayis][1].length; i++){
+	$("#linktosection1").click(function(){
+	$('html, body').stop().animate({
+		scrollTop: $("#section1").offset().top
+	}, 300)
+		})
+	$("#linktosection2").click(function(){
+		$('html, body').stop().animate({
+			scrollTop: $("#section2").offset().top
+			}, 300)
+		})
+	$("#linktosection3").click(function(){
+		$('html, body').stop().animate({
+			scrollTop: $("#section3").offset().top
+		}, 300)
+	})		
+}
 }
 
 $(document).ready(function(){
+
 })
