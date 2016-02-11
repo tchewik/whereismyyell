@@ -13,7 +13,7 @@ function setColorsSubjectsETC(todayis){
 		muladhara: ["Понедельник", ["Диффуры", "Физика", "Философия"]],
 		svadhishthana: ["Вторник", ["Компьютерные сети", "Логическое программирование"]],
 		manipura: ["Среда", ["Java", "Естествознание"]],
-		anahata: ["Четверг", ["Теория вероятностей", "Компьютерные сети"]],
+		anahata: ["Четверг", ["Теория вероятностей", "Компьютерные сети", "Научное программирование"]],
 		vishuddha: ["Пятница"],
 		ajna: ["Суббота"],
 		sahasrara: ["Воскресенье"]	
@@ -44,13 +44,22 @@ $(document).ready(function(){
 			scrollTop: $("#section3").offset().top
 		}, 300)
 	})		
-	$(".way").click(function(){
-		$("#waydiv").css('display', 'inline');
-		$("#waydiv").html(waydiv);
-		$("#mainTxtDiv").fadeIn(1000);
-		$('html, body').stop().animate({
-			scrollTop: $("#text").offset().top
-		}, 500)
-		console.log('ты кликнула по есенину');
+
+	var iswayhere = false;
+	$("#wayspan").click(function(){
+		iswayhere = !iswayhere;
+		if (iswayhere){
+			var wayjpg = '<br><div class="col-md-3"></div><div class="col-md-4 wayjpg"><img src="img/way1.jpg"/></div><div class="col-md-4 wayjpg"><img src="img/way2.jpg"/></div><div class="col-md-1"></div><br><br><br>';
+			$("#waydiv").css('display', 'inline');
+			$("#waydiv").html(wayjpg);
+			$("#waydiv").fadeIn(1000);
+			$('html, body').stop().animate({
+				scrollTop: $("#waydiv").offset().top
+			}, 1000)
+		}else{$('.wayjpg').remove();}
 	});
+
+	$(".wayjpg").click(function(){
+
+	})
 })
