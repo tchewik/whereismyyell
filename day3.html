@@ -37,12 +37,9 @@
 	<div class="jumbotron page-header"><h1 id="title"></h1>
 		<p><small id="currenttime">Загрузка времени</small></p>
 		<span id="musicon" class="glyphicon glyphicon-play" style="size: 20px"></span><span style="size: 20px">Карма FM</span>
-		<audio id="musplay" src="mp3/day3fm.mp3" loop></audio>
+		<audio id="musplay" src="mp3/day2fm.mp3" loop></audio>
 	</div>
-	<div class="row">
-		<div class="col-md-4 col-xs-3"></div>
-		<div id="fmAlert" class="col-md-4 col-xs-6"></div>
-		<div class="col-md-4 col-xs-3"></div>
+	<div id="fmAlert"></div>
 	</div>
 	<div id="section1" class="container-fluid text-center sect-white">
 		<div class="row">
@@ -99,7 +96,6 @@
 				msg = true;
 				$("#fmAlert").addClass('alert alert-warning fade in');
 				$("#fmAlert").html('Выбирая сегодняшнюю композицию, металась между этим и "Ногтями" Кровостока. Вот, насколько мерзкий день.');
-
 			}	
 		});
 	</script>

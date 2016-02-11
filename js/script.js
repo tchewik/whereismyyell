@@ -25,7 +25,10 @@ function setColorsSubjectsETC(todayis){
 		navbarcontent += '<li><a id="linktosection' + (i+1) + '" href="#section' + (i+1) + '">' + nameOfDay[todayis][1][i] + '</a></li>';
 	}
 	$("#subNavBar").html(navbarcontent);
-	for (i = 0; i < nameOfDay[todayis][1].length; i++){
+
+}
+
+$(document).ready(function(){
 	$("#linktosection1").click(function(){
 	$('html, body').stop().animate({
 		scrollTop: $("#section1").offset().top
@@ -41,9 +44,13 @@ function setColorsSubjectsETC(todayis){
 			scrollTop: $("#section3").offset().top
 		}, 300)
 	})		
-}
-}
-
-$(document).ready(function(){
-
+	$(".way").click(function(){
+		$("#waydiv").css('display', 'inline');
+		$("#waydiv").html(waydiv);
+		$("#mainTxtDiv").fadeIn(1000);
+		$('html, body').stop().animate({
+			scrollTop: $("#text").offset().top
+		}, 500)
+		console.log('ты кликнула по есенину');
+	});
 })
