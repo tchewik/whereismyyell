@@ -31,6 +31,11 @@
 	font-size: 6.2vmax;
 }
 
+.chapter-header{
+	color: #8b8b8b;
+	font-variant: small-caps;
+}
+
 /*RED&WHITE mondays*/
 .btn-red{
 	color: #fff;
@@ -124,7 +129,7 @@ fieldset[disabled] .btn-red.active {
 	font-weight: bolder;
 }
 
-
+/*ORANGE&WHITE tuesdays*/
 .btn-orange{
 	color: #fff;
   	background-image: none;
@@ -177,7 +182,53 @@ fieldset[disabled] .btn-orange.active {
 	background-color: #ba853a!important;
 	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
+.orange .jumbotron{	
+	text-align: center;
+	color: #fff;
+	background-color: #e38d13;
+	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
+}
+.orange .navbar {
+	margin-bottom: 0;
+	background-color: #e38d13;
+	z-index: 9999;
+	border: 0;
+	letter-spacing: 1px;
+	border-radius: 0;
+}
+.orange .navbar-nav li a:hover, 
+.orange .navbar-nav li .active a {
+	color: #e38d13 !important;
+	background-color: #fff !important;
+}
+.orange .nav-inside-content li a:link,
+.orange .nav-inside-content li a:hover, 
+.orange .nav-inside-content li a:active,
+.orange .nav-inside-content li a:visited,
+.orange .sect-grey a:link,
+.orange .sect-grey a:hover,
+.orange .sect-grey a:active,
+.orange .sect-grey a:visited,
+.orange .sect-white a:link,
+.orange .sect-white a:hover,
+.orange .sect-white a:active,
+.orange .sect-white a:visited,
+.orange footer a:link,
+.orange footer a:hover,
+.orange footer a:active,
+.orange footer a:visited{
+	color: #e38d13 !important;
+	text-decoration: none;
+} 
+.orange .karmafm{
+	size: 1em;
+	padding-top: 12px;
+	margin-bottom: 0;
+	color: #e38d13;
+	font-weight: bolder;
+}
 
+/*YELLOW&WHITE wednesdays*/
 .btn-yellow{
 	color: #fff;
   	background-image: none;
@@ -230,6 +281,52 @@ fieldset[disabled] .btn-yellow.active {
 	background-color: #fffd7b;
 	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
+.yellow .jumbotron{
+	text-align: center;
+	color: #fff;
+	background-color: #e9cf00;
+	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
+}
+.yellow .navbar {
+	margin-bottom: 0;
+	background-color: #e9cf00;
+	z-index: 9999;
+	border: 0;
+	letter-spacing: 1px;
+	border-radius: 0;
+}
+.yellow .navbar-nav li a:hover, 
+.yellow .navbar-nav li .active a {
+	color: #cab300 !important;
+	background-color: #fff !important;
+}
+.yellow .nav-inside-content li a:link,
+.yellow .nav-inside-content li a:hover, 
+.yellow .nav-inside-content li a:active,
+.yellow .nav-inside-content li a:visited,
+.yellow .sect-grey a:link,
+.yellow .sect-grey a:hover,
+.yellow .sect-grey a:active,
+.yellow .sect-grey a:visited,
+.yellow .sect-white a:link,
+.yellow .sect-white a:hover,
+.yellow .sect-white a:active,
+.yellow .sect-white a:visited,
+.yellow footer a:link,
+.yellow footer a:hover,
+.yellow footer a:active,
+.yellow footer a:visited{
+	color: #cab300 !important;
+	text-decoration: none;
+} 
+.yellow .karmafm{
+	size: 1em;
+	padding-top: 12px;
+	margin-bottom: 0;
+	color: #cab300;
+	font-weight: bolder;
+}
+
 
 .btn-green{
 	color: #fff;
@@ -347,27 +444,18 @@ fieldset[disabled] .btn-purple.active {
 	}
 }
 
-.sect-white{
+.section{
 	background-color: #fff;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-size: 18px;
 	text-align: justify;
+	border-bottom: 2px solid #c6c6c6;
 }
-.sect-white img{
+.section img{
 	max-width: 100%;
 }
 
-.sect-grey{
-	background-color: #f0f0f0;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 18px;
-	text-align: justify;
-}
-.sect-grey img{
-	max-width: 100%;
-}
 
 .navbar li a, 
 .navbar 
@@ -384,86 +472,18 @@ fieldset[disabled] .btn-purple.active {
 
 
 
-/*ORANGE&WHITE tuesdays*/
-.svadhishthana .jumbotron{	
-	text-align: center;
-	color: #fff;
-	background-color: #e38d13;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-}
-.svadhishthana .navbar {
-	margin-bottom: 0;
-	background-color: #e38d13;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.svadhishthana .navbar-nav li a:hover, 
-.svadhishthana .navbar-nav li .active a {
-	color: #e38d13 !important;
-	background-color: #fff !important;
-}
-.svadhishthana .sect-grey a:link,
-.svadhishthana .sect-grey a:hover,
-.svadhishthana .sect-grey a:active,
-.svadhishthana .sect-grey a:visited,
-.svadhishthana .sect-white a:link,
-.svadhishthana .sect-white a:hover,
-.svadhishthana .sect-white a:active,
-.svadhishthana .sect-white a:visited,
-.svadhishthana footer a:link,
-.svadhishthana footer a:hover,
-.svadhishthana footer a:active,
-.svadhishthana footer a:visited{
-	color: #e38d13;
-	text-decoration: none;
-}
 
-/*YELLOW&WHITE wednesdays*/
-.manipura .jumbotron{
-	text-align: center;
-	color: #fff;
-	background-color: #e9cf00;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-}
-.manipura .navbar {
-	margin-bottom: 0;
-	background-color: #e9cf00;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.manipura .navbar-nav li a:hover, 
-.manipura .navbar-nav li .active a {
-	color: #e9cf00 !important;
-	background-color: #fff !important;
-}
-.manipura .sect-grey a:link,
-.manipura .sect-grey a:hover,
-.manipura .sect-grey a:active,
-.manipura .sect-grey a:visited,
-.manipura .sect-white a:link,
-.manipura .sect-white a:hover,
-.manipura .sect-white a:active,
-.manipura .sect-white a:visited,
-.manipura footer a:link,
-.manipura footer a:hover,
-.manipura footer a:active,
-.manipura footer a:visited{
-	color: #e9cf00;
-	text-decoration: none;
-}
+
+
 
 /*GREEN&WHITE thursdays*/
-.anahata .jumbotron{
+.green .jumbotron{
 	text-align: center;
 	color: #fff;
 	background-color: #3e8f3e;
 	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
 }
-.anahata .navbar {
+.green .navbar {
 	margin-bottom: 0;
 	background-color: #3e8f3e;
 	z-index: 9999;
@@ -471,23 +491,23 @@ fieldset[disabled] .btn-purple.active {
 	letter-spacing: 1px;
 	border-radius: 0;
 }
-.anahata .navbar-nav li a:hover, 
-.anahata .navbar-nav li .active a {
+.green .navbar-nav li a:hover, 
+.green .navbar-nav li .active a {
 	color: #3e8f3e !important;
 	background-color: #fff !important;
 }
-.anahata .sect-grey a:link,
-.anahata .sect-grey a:hover,
-.anahata .sect-grey a:active,
-.anahata .sect-grey a:visited,
-.anahata .sect-white a:link,
-.anahata .sect-white a:hover,
-.anahata .sect-white a:active,
-.anahata .sect-white a:visited,
-.anahata footer a:link,
-.anahata footer a:hover,
-.anahata footer a:active,
-.anahata footer a:visited{
+.green .sect-grey a:link,
+.green .sect-grey a:hover,
+.green .sect-grey a:active,
+.green .sect-grey a:visited,
+.green .sect-white a:link,
+.green .sect-white a:hover,
+.green .sect-white a:active,
+.green .sect-white a:visited,
+.green footer a:link,
+.green footer a:hover,
+.green footer a:active,
+.green footer a:visited{
 	color: #3e8f3e;
 	text-decoration: none;
 }

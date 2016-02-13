@@ -1,21 +1,60 @@
 $(document).ready(function(){
-	
+		var red = {
+			task1: '<a id="linktosection1" href="#section1">Диффуры</a>',
+			task2: '<a id="linktosection2" href="#section2">Физика</a>',
+			task3: '<a id="linktosection3" href="#section3">Философия</a>',
+			fm: "mp3/day1fm.mp3",
+			section1: '<div class="col-md-1"></div><div class="col-md-8"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>"БЕРЁТЕ ЖЕЛЕЗНЫЙ ЛОМИК, ОБОРАЧИВАЕТЕ ТКАНЬЮ..."</p>Ключевую роль в сегодняшней практике по диффурам сыграл крепчающий неунывающий топографический кретинизм. Надо было всего-то преодолеть путь от Зябликово до университета: немного пройтись, посидеть на неудобных сиденьях, причинить настоявшимся утренним взглядом некоторое неудобство собратьям по вагону и ещё немного пройтись. Вышло из рук вон. Разбудить меня в семь утра после двух часов сна, сунуть в трясущиеся руки громоздкий багаж и отправить подышать подземным воздухом с самого начала казалось нежизнеспособной идеей. Так вот, дорогая сливушка, я опоздала на диффуры на 40 (сорок) минут, и, лишь только села за парту, задремала. <br>Таковы неутешительные итоги первой пары наступившего семестра.<br><br>Прилагаю <abbr title="Кликабельно!">материалы</abbr>, относящиеся к сегодняшней практике.<br>Решать сейчас не буду, соседка уже спит, да и мне хотелось бы, не обессудь.<br><br></div><div class="col-md-2"><a href="img/diff1.jpg" target="_blank"><img src="img/diff1.jpg"/></a></div><div class="col-md-1"></div><div class="col-md-2"><a href="img/diff2.jpg" target="_blank"><img src="img/diff2.jpg"/></a></div><div class="col-md-2"><a href="img/diff3.jpg" target="_blank"><img src="img/diff3.jpg"/></a></div><div class="col-md-2"><a href="img/diff4.jpg" target="_blank"><img src="img/diff4.jpg"/></a></div><div class="col-md-2"><a href="img/diff5.jpg" target="_blank"><img src="img/diff5.jpg"/></a></div><div class="col-md-2"><a href="img/diff6.jpg" target="_blank"><img src="img/diff6.jpg"/></a></div><div class="col-md-1"></div>',
+			section2: '<div class="row"><div class="col-md-1"></div><div class="col-md-10"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>"ВОТ СКАЖИТЕ-КА МНЕ, МОЛОДОЙ ЧЕЛОВЕК, ДА-ДА, ВЫ..."</p><img src="img/phys1.png"/></div><div class="col-md-1"></div></div>',
+			section3: '<div class="row"><div class="col-md-1"></div><div class="col-md-5"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>НУЖНЫ ЛИ МЫ НАМ?</p>Возможно, не самая мрачная страница истории, однако покрыта неизвестностью, как ломик тряпкой. Мы не знаем, что влияет на баллы, мы не знаем, чего ждать от аттестаций. Единственными данными нам инструкциями было: пишите конспект так, чтобы его было интересно перечитать, пишите в конспекте основные тезисы, пишите в конспекте своё отношение к сказанному мной, пишите в конспекте дату, название лекции, которое я, <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=1780" title="Симакин Александр Георгиевич" target="_blank">хитрец</a>, вам ни за что не скажу, пишите в конспекте, главное, - пишите в конспекте. <br>Очень это важно.<br><br><br>Бонус — полный конспект Егора (версия без купюр и цензуры):<br><i>"Философия<br><br>Свобода — не произвол<br>Буржуазные извращения в квантовой механике<br>БРС: нужна тетрадь.<br>Писать число, тему лекции, основные мысли лекции<br>материалы для подготовки к семинарам<br><br>Польза от философии сомнительна, а вред — очевиден"<br></i></div><div class="col-md-5 lect"><a href="img/phil1.jpg" target="_blank"><img src="img/phil1.jpg" style="max-height: 100%"/></a></div></div><div class="col-md-1"></div></div>',
+			color: 'red',
+		}
+		var orange = {
+			task1: '<a id="linktosection1" href="#section1">Компьютерные сети</a>',
+			task2: '<a id="linktosection2" href="#section2">Логическое программирование</a>',
+			fm: "mp3/day2fm.mp3",
+			section1: '<div class="col-md-1"></div><div class="col-md-10"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>"ФИЩУК — ИСТОРИЧЕСКАЯ ЦЕННОСТЬ НАШЕГО ФАКУЛЬТЕТА"</p>Порадовать нас прибаутками о факультете, экскурсом в историю и объяснением — наконец-то! — чем же отличается НИ от НК и НК от НП в первый зал явился, шутка ли, сам <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=1704" target="_blank">завкафедрой</a> прикладной информатики и теории вероятностей, рвач и интеллигентнейший человек. Говорил много, громко и внятно. Рекомендовал <a href="stuff/Wiener_Ya_Matematik.djvu" download>литературу</a>. Семинары вести будет, возможно, Сопин. Он же (или не он) расскажет о БРС и прочей несущественной ерунде.<br><abbr title="Вероятно, первый за два года преподаватель университета, выглядящий, как преподаватель университета.">Ходить на его лекции мы будем.<br><br></div><div class="col-md-1"></div>',
+			section2: '<div class="col-md-1"></div><div class="col-md-6"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>"ЗДЕСЬ ОСТАНУТСЯ ТОЛЬКО ТАКИЕ... НУ... КОТОРЫЕ ЗАДАЧКИ ЛЮБЯТ РЕШАТЬ"</p>Преподаватель — Вячеслав Владимирович. Фамилию не расслышала, есть опасения, что он Жуков. Да, <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=454" target="_blank">точно.</a><br>Рассказал, что <a href="https://habrahabr.ru/post/124636/" target="_blank">Prolog — интерпретируемый язык декларативного программирования</a>. Работать его группа будет с <a href="http://www.visual-prolog.com" target="_blank">Visual Prolog</a>.<br><br>БРС:<ul><li>10б за посещение</li><li>20б Х3 за три лабы</li><li>30б за четвертую лабу (с, подумать только, интерфейсом!)</li></ul>Опять же, рекомендовал книжки.<br><br>Вот и все новости на сегодня.<br>Всего доброго.</div><div class="col-md-2"><a href="img/prolog1.jpg" target="_blank"><img src="img/prolog1.jpg"/></a></div><div class="col-md-2"><a href="img/prolog2.jpg" target="_blank"><img src="img/prolog2.jpg"/></a></div><div class="col-md-1"></div>',
+			color: 'orange',
+		}
+		var yellow = {
+			task1: '<a id="linktosection1" href="#section1">Java</a>',
+			task2: '<a id="linktosection2" href="#section2">Естествознание</a>',
+			fm: "mp3/day3fm.mp3",
+			section1: '<div class="col-md-1"></div><div class="col-md-6"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>"ЭТО ВСЁ ВАМ НА СЕМИНАРЕ РАССКАЖУТ"</p>Этот унылейший вопреки цвету день начался с того, что я явилась на лекцию по Java в 10.40 и всё равно опоздала. Лекцию читал <a href="http://web-local.rudn.ru/web-local/prep/rj/index.php?id=2468&p=42818" target="_blank">старый добрый</a>, хорошо это или не хорошо. Проектор у него выкидывал фокусы, интернет не работал, мне всё это было безразлично, поскольку сидела я далеко. Бла, бла, <a href="http://www.java-study.ru/java-uchebnik/3-java-history" target="_blank">история Java</a>, бла, бла, он будет выкладывать свои материалы для НБ, заходи, <a href="http://web-local.rudn.ru/web-local/prep/rj/index.php?id=2468&p=39154" target="_blank">смотри</a>, бла, бла, и семинары и лекции будет вести Кулькова, она всё расскажет про БРС, про лабораторные, бла, бла. Надиктовал пару таблиц со взаимоисключающими параграфами ("В Java нет goto-подобного оператора," а через пару пунктов — "реализованы continue и break с метками"), некоторые пункты привели Егора в замешательство. Когда сумел подключиться к сети, последовало коллективное, почти сектаторское чтение материалов samsung IT school. В это самое время я прочитала весь твой паблик. Строго-настрого запретил выкидывать свои материалы в свободный доступ и зарабатывать на них, аж руки зачесались. <br>бла, бла, первую задачу, одинаковую для всех групп он уже выложил<br> бла, бла, пользуйтесь <a href="http://developer.android.com/sdk/index.html" target="_blank">Android Studio</a><br>бла, бла, 12:30.<br><br>Дальше — веселее.<br>Кульковой как не было, так и не было. На семинаре мы застали, да-да, Маргариту Каменскую.<br>"Это всё вам на лекции расскажут" и "Людмила Ивановна ещё сама не решила, что вам давать" воспоследовали незамедлительно.<br>Рекомендовала <a href="https://netbeans.org/downloads/" target="_blank">NetBeans</a>. Рекомендовала Шилдта. Долго, вязко на доске мелом <a href="stuff/HelloWorld.html" target="_blank"> Hello, World и ввод квадратной матрицы</a>. Задачу 1 решаем под тем номером, под каким зафиксировали на её листочке своё присутствие.<br><br>Ужасный день, бессмысленный. Спина разламывается.</div><div class="col-md-2"><a href="img/java1.jpg" target="_blank"><img src="img/java1.jpg"/></a></div><div class="col-md-2"><a href="img/java2.jpg" target="_blank"><img src="img/java2.jpg"/></a></div><div class="col-md-1"></div>',
+			section2: '<div class="row"><div class="col-md-1"></div><div class="col-md-10"><p class="chapter-header"><span class="moveUp glyphicon glyphicon-menu-up">&ensp;</span>КАК ПЕРЕСТАТЬ БЕСПОКОИТЬСЯ И НАЧАТЬ НЕПРАВИЛЬНО СТАВИТЬ УДАРЕНИЯ</p>Каждую секунду с 15:20 до 16:50 я прочувствовала кишками. Преподаватель, дама, говорила много и долго. Так много и долго, что я не запомнила ничего. Собственно, вся необходимая информация в записях, если ты что-то там разберёшь. Требует, прости, господи, участвовать в дискуссии, вести конспект на лекции, дома, в общественном транспорте и в уборной. <br>День, начинавшийся не радужно, стремительно погружался в атмосферу Рубина-202. Даже если я что-то квакала в ответ на её вопросы слушателям, она не слышала, не слушала, принимала мой голос за чей-то ещё. Через восемь мучительных часов занятия я поинтересовалась, сколько же времени оталось: 15 минут.<br>К концу этой пары египетской мне было уже всё равно, что спина болит. Убежала из университета на негнущихся ногах. Зрачки мои было и не разглядеть.<br><br></div><div class="col-md-1"></div></div><div class="row"><div class="col-md-1"></div><div class="col-md-5"><a href="img/natur1.jpg" target="_blank"><img src="img/natur1.jpg"/></a></div><div class="col-md-5"><img src="img/natur2.jpg"/></div><div class="col-md-1"></div></div>',
+			color: 'yellow',
+		}
 
-	var iswayhere = false;
-	$("#wayspan").click(function(){
-		iswayhere = !iswayhere;
-		if (iswayhere){
-			var wayjpg = '<br><div class="col-md-3"></div><div class="col-md-4 wayjpg"><img src="img/way1.jpg"/></div><div class="col-md-4 wayjpg"><img src="img/way2.jpg"/></div><div class="col-md-1"></div><br><br><br>';
-			$("#waydiv").css('display', 'inline');
-			$("#waydiv").html(wayjpg);
-			$("#waydiv").fadeIn(1000);
-			$('html, body').stop().animate({
-				scrollTop: $("#waydiv").offset().top
-			}, 1000)
-		}else{$('.wayjpg').remove();}
-	});
+		var green = {
+			task1: '<a id="linktosection1" href="#section1">Теория вероятностей</a>',
+			task2: '<a id="linktosection2" href="#section2">Компьютерные сети</a>',
+			task3: '<a id="linktosection3" href="#section3">Научное программирование</a>',
+			fm: "mp3/day4fm.mp3",
+			section1: '<div class="col-md-1"></div><div class="col-md-2"><a href="stuff/feb11tv.zip" download><img src="img/feb11tv0.jpg"/><br><br></a></div><div class="col-md-8"><p>ТРИ ЧАСА СТАБИЛЬНОСТИ</p><br>По всей видимости, мой удел — писать развернуто через день, ибо никакого желания делать это сегодня ночью я не испытываю. Навязчивая идея дня — аудиально невесомые, кишащие тараканами <span id="wayspan" style="color: #3e8f3e">коридоры</span>. В одном из таких сидела в углу, пила чаёк, записывала сегодняшнее (утреннее?) радио, чтоб всё, как ты любишь. Декадентствую, что есть мочи. Скучно. Ноги болят, в голове — крупнодисперсный туман, строчки изгибаются, как жалюзи, закрывающие горизонт событий. Вот в такой сомнамбулической невесомости надо оказаться, чтобы начитывать тебе Есенина.<br><br>Понравится тебе это или нет, но ударить ты меня не сможешь (хотя бы пока).<br><br>Чуть не забыла: теория вероятности. Там всё стабильно. <br>Домашнее задание — первая задача. Архив с записями получишь, ткнув в листочек слева.<br><br></div><div class="col-md-1"></div>',
+			section2: '<div class="col-md-1"></div><div class="col-md-6"><p class="chapter-header">СДАВАЙ ЭКЗАМЕН ИЛИ ПИШИ РЕФЕРАТ</p><br>К тому, что в записях и на <a href="http://web-local.rudn.ru/web-local/prep/rj/index.php?id=1851&mod=disc&disc_id=10944&p=-1" target="_blank">портале</a>, добавить, пожалуй, нечего. <br>Экзамен принимает Эдуард Сергеевич. <br>На семинаре вливает нам в уши всякое о сетях, как может. <br>Познавательно.</div><div class="col-md-2"><a href="img/net1.jpg" target="_blank"><img src="img/net1.jpg"/></a></div><div class="col-md-2"><a href="img/net2.jpg" target="_blank"><img src="img/net2.jpg"/></a></div>',
+			section3: '<div class="col-md-1"></div><div class="col-md-10"><p class="chapter-header">"НЕ ЗНАЮ, КАК ТАМ У ВАС, НО МОЯ ЧИТАЛКА ВПОЛНЕ УМЕЕТ РЕШАТЬ ДИФФЕРЕНЦИАЛЬНЫЕ УРАВНЕНИЯ"</p><br>Научным программированием заведует импозантный <a href="http://web-local.rudn.ru/web-local/prep/rj/index.php?id=2281&p=37882" target="_blank">мужичок</a>, щедро разбрасывающий прибаутки и едва читаемыми чертами сочетающий в себе Кулябова и кота Базилио.<br><br>Слушали о том, как студенты сдают дипломные работы, наполненные через край скриншотами графиков, сжатыми до 80 шакалов, и какое удовлетворение он от этого получает, а потому важно и нужно уметь пользоваться всяческими Texами (совсем по-домашнему — из какой-нибудь подручной линуксовой консоли) и оформлять научные работы в них.<br><br>Решали простую задачку, дабы 80% пришедших проняло духом великого введения в логическое программирование, и больше они в эту группу не приходили. Бедняга, не знает, что у нас альтернатива — Prolog. Дабы зарыть себя окончательно, сообщил, что 60 баллов можно набрать исключительно посещением занятий, без демонстрации собственного невежества. Смотри, в общем, первую лекцию и БРС по ссылке выше. <br><br>Сверх этого ничего, пожалуй, не скажу. <br><br>Сдаёшь задачу — берёшь с полки червонец. Писать можно на чём угодно, однако дорогой наш Python (как там, к слову, руки?) ему неведом. С порога заявил, что он не программист, вот, скажем, математическая физика, — это да, это его.<br><br>Общее впечатление таково: будет не намного веселее, нежели на курсе фортрана.</div><div class="col-md-1"></div>',
+			color: 'green',
+		}
 
-	$(".wayjpg").click(function(){
+		var source = $("#detail-template").html();
+		var detail_template = Handlebars.compile(source);
 
-	})
+		$("#btn_red").click(function(){
+			var html = detail_template(red);
+			$("#content").html(html);
+		})
+		$("#btn_svadh").click(function(){
+			var html = detail_template(orange);
+			$("#content").html(html);
+		})
+		$("#btn_manip").click(function(){
+			var html = detail_template(yellow);
+			$("#content").html(html);
+		})
+		$("#btn_anahata").click(function(){
+			var html = detail_template(green);
+			$("#content").html(html);
+		})
+
 })
