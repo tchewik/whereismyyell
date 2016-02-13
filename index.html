@@ -38,7 +38,9 @@
 	<script id="detail-template" type="text/x-handlebars-template">
 		<ul class="nav nav-tabs nav-inside-content">
 			<li><span id="musicon" class="glyphicon glyphicon-play karmafm" style="size: 20px"></span><span class="karmafm">Карма FM&emsp;</span></li>
-			{{{navbar}}}
+			<li id="linktosection1">{{{task1}}}</li>
+			<li id="linktosection2">{{{task2}}}</li>
+			<li id="linktosection3">{{{task3}}}</li>
 		</ul>
 		<audio id="musplay" class="fm" src='{{fm}}' loop></audio>
 
@@ -69,12 +71,29 @@
 				} else{
 					document.getElementById("musplay").pause();
 				}
-			})
+			});
+			$("#linktosection1").click(function(){
+				$("html, body").stop().animate({
+					scrollTop: $("#section1").offset().top
+				}, 600);
+				});
+			$("#linktosection2").click(function(){
+				$("html, body").stop().animate({
+					scrollTop: $("#section2").offset().top
+					}, 600)
+				});
+			$("#linktosection3").click(function(){
+				$('html, body').stop().animate({
+					scrollTop: $("#section3").offset().top
+				}, 600)
+			});	
 		</script>
 	</script>
 	<script>
 		var red = {
-			navbar: '<li><a id="linktosection1" href="#section1">Диффуры</a></li><li><a id="linktosection2" href="#section2">Физика</a></li><li><a id="linktosection3" href="#section3">Философия</a></li>',
+			task1: '<a id="linktosection1" href="#section1">Диффуры</a>',
+			task2: '<a id="linktosection2" href="#section2">Физика</a>',
+			task3: '<a id="linktosection3" href="#section3">Философия</a>',
 			fm: "mp3/day1fm.mp3",
 			section1: '<div class="col-md-1"></div><div class="col-md-8"><p>"БЕРЁТЕ ЖЕЛЕЗНЫЙ ЛОМИК, ОБОРАЧИВАЕТЕ ТКАНЬЮ..."</p>Ключевую роль в сегодняшней практике по диффурам сыграл крепчающий неунывающий топографический кретинизм. Надо было всего-то преодолеть путь от Зябликово до университета: немного пройтись, посидеть на неудобных сиденьях, причинить настоявшимся утренним взглядом некоторое неудобство собратьям по вагону и ещё немного пройтись. Вышло из рук вон. Разбудить меня в семь утра после двух часов сна, сунуть в трясущиеся руки громоздкий багаж и отправить подышать подземным воздухом с самого начала казалось нежизнеспособной идеей. Так вот, дорогая сливушка, я опоздала на диффуры на 40 (сорок) минут, и, лишь только села за парту, задремала. <br>Таковы неутешительные итоги первой пары наступившего семестра.<br><br>Прилагаю <abbr title="Кликабельно!">материалы</abbr>, относящиеся к сегодняшней практике.<br>Решать сейчас не буду, соседка уже спит, да и мне хотелось бы, не обессудь.<br><br></div><div class="col-md-2"><a href="img/diff1.jpg" target="_blank"><img src="img/diff1.jpg"/></a></div><div class="col-md-1"></div><div class="col-md-2"><a href="img/diff2.jpg" target="_blank"><img src="img/diff2.jpg"/></a></div><div class="col-md-2"><a href="img/diff3.jpg" target="_blank"><img src="img/diff3.jpg"/></a></div><div class="col-md-2"><a href="img/diff4.jpg" target="_blank"><img src="img/diff4.jpg"/></a></div><div class="col-md-2"><a href="img/diff5.jpg" target="_blank"><img src="img/diff5.jpg"/></a></div><div class="col-md-2"><a href="img/diff6.jpg" target="_blank"><img src="img/diff6.jpg"/></a></div><div class="col-md-1"></div>',
 			section2: '<div class="row"><div class="col-md-1"></div><div class="col-md-10"><p>"ВОТ СКАЖИТЕ-КА МНЕ, МОЛОДОЙ ЧЕЛОВЕК, ДА-ДА, ВЫ..."</p><img src="img/phys1.png"/></div><div class="col-md-1"></div></div>',
@@ -82,7 +101,8 @@
 			color: 'red',
 		}
 		var svadhishthana = {
-			navbar: '<li><a id="linktosection1" href="#section1">Компьютерные сети</a></li><li><a id="linktosection2" href="#section2">Логическое программирование</a></li>',
+			task1: '<a id="linktosection1" href="#section1">Компьютерные сети</a>',
+			task2: '<a id="linktosection2" href="#section2">Логическое программирование</a>',
 			fm: "mp3/day2fm.mp3",
 			section1: '<div class="col-md-1"></div><div class="col-md-10"><p>"ФИЩУК — ИСТОРИЧЕСКАЯ ЦЕННОСТЬ НАШЕГО ФАКУЛЬТЕТА"</p>Порадовать нас прибаутками о факультете, экскурсом в историю и объяснением — наконец-то! — чем же отличается НИ от НК и НК от НП в первый зал явился, шутка ли, сам <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=1704" target="_blank">завкафедрой</a> прикладной информатики и теории вероятностей, рвач и интеллигентнейший человек. Говорил много, громко и внятно. Рекомендовал <a href="stuff/Wiener_Ya_Matematik.djvu" download>литературу</a>. Семинары вести будет, возможно, Сопин. Он же (или не он) расскажет о БРС и прочей несущественной ерунде.<br><abbr title="Вероятно, первый за два года преподаватель университета, выглядящий, как преподаватель университета.">Ходить на его лекции мы будем.<br><br></div><div class="col-md-1"></div>',
 			section2: '<div class="col-md-1"></div><div class="col-md-6"><p>"ЗДЕСЬ ОСТАНУТСЯ ТОЛЬКО ТАКИЕ... НУ... КОТОРЫЕ ЗАДАЧКИ ЛЮБЯТ РЕШАТЬ"</p>Преподаватель — Вячеслав Владимирович. Фамилию не расслышала, есть опасения, что он Жуков. Да, <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=454" target="_blank">точно.</a><br>Рассказал, что <a href="https://habrahabr.ru/post/124636/" target="_blank">Prolog — интерпретируемый язык декларативного программирования</a>. Работать его группа будет с <a href="http://www.visual-prolog.com" target="_blank">Visual Prolog</a>.<br><br>БРС:<ul><li>10б за посещение</li><li>20б Х3 за три лабы</li><li>30б за четвертую лабу (с, подумать только, интерфейсом!)</li></ul>Опять же, рекомендовал книжки.<br><br>Вот и все новости на сегодня.<br>Всего доброго.</div><div class="col-md-2"><a href="img/prolog1.jpg" target="_blank"><img src="img/prolog1.jpg"/></a></div><div class="col-md-2"><a href="img/prolog2.jpg" target="_blank"><img src="img/prolog2.jpg"/></a></div><div class="col-md-1"></div>',
