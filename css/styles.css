@@ -1,18 +1,11 @@
 .index-body{
-	background: url('../img/index_bg.jpg') fixed;
-	background-size: cover;
 	font-size: 200%;
+	color: #8b8b8b;
 }
 
 .lect img{
 	max-width: 100%;
 	margin: auto;
-}
-
-@media(max-width: 720px){
-	.index-body{
-		background-position: top right;
-	}
 }
 
 .index-header{
@@ -25,7 +18,7 @@
 	margin: auto;
 	height: 10%;
 	width: 70%;
-	color: #131382;
+	color: #8b8b8b;
 	text-align: center;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-size: 6.2vmax;
