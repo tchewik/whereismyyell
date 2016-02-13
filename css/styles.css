@@ -49,6 +49,23 @@
 	max-width: 100%;
 }
 
+.glyphicon-play,
+.glyphicon-menu-up{
+	cursor: pointer;
+}
+
+@media (max-width: 768px){	
+	.smart-btn-width{
+		display: block!important;	
+		width: 100%!important;
+	}
+}
+@media (min-width: 769px) and (max-width: 1000px){
+	.smart-btn-width{
+		font-size: 96%;
+	}
+}
+
 /*RED&WHITE mondays*/
 .btn-red{
 	color: #fff;
@@ -328,7 +345,7 @@ fieldset[disabled] .btn-yellow.active {
 	font-weight: bolder;
 }
 
-
+/*GREEN&WHITE thursdays*/
 .btn-green{
 	color: #fff;
   	background-image: none;
@@ -382,91 +399,6 @@ fieldset[disabled] .btn-green.active {
 	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
 
-.btn-purple{
-	color: #fff;
-  	background-image: none;
-	background-color: #4b2461; 
-	border-color: #33253b;
-}
-.btn-purple.active {
-	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
-.btn-purple[disabled],
-fieldset[disabled] .btn-purple {
-	color: #fff;
-	box-shadow: none;
-	box-shadow: none;
-}
-.btn-purple:hover,
-.btn-purple:focus {
-	color: #fff;
-	background-color: #261331; 
-	border-color: #261332;
-}
-.btn-purple:active,
-.btn-purple.active {
-	color: #fff;
-  	background-image: none;
-	background-color: #1a042d;
-	border-color: #1d042c;
-}
-.btn-purple.disabled,
-.btn-purple[disabled],
-fieldset[disabled] .btn-purple,
-.btn-purple.disabled:hover,
-.btn-purple[disabled]:hover,
-fieldset[disabled] .btn-purple:hover,
-.btn-purple.disabled:focus,
-.btn-purple[disabled]:focus,
-fieldset[disabled] .btn-purple:focus,
-.btn-purple.disabled.focus,
-.btn-purple[disabled].focus,
-fieldset[disabled] .btn-purple.focus,
-.btn-purple.disabled:active,
-.btn-purple[disabled]:active,
-fieldset[disabled] .btn-purple:active,
-.btn-purple.disabled.active,
-.btn-purple[disabled].active,
-fieldset[disabled] .btn-purple.active {
-	color: #fff;
-	background-color: #33253b;
-}
-
-@media (max-width: 768px){	
-	.smart-btn-width{
-		display: block!important;	
-		width: 100%!important;
-	}
-}
-@media (min-width: 769px) and (max-width: 1000px){
-	.smart-btn-width{
-		font-size: 96%;
-	}
-}
-
-
-
-.navbar li a, 
-.navbar 
-.navbar-brand {
-	color: #fff !important;
-}
-.navbar-default .navbar-toggle {
-	border-color: transparent;
-	color: #fff !important;
-}
-.navbar-default .icon-bar{
-	background-color: #fff!important;
-}
-
-
-
-
-
-
-
-/*GREEN&WHITE thursdays*/
 .green .jumbotron{
 	text-align: center;
 	color: #fff;
@@ -486,6 +418,10 @@ fieldset[disabled] .btn-purple.active {
 	color: #3e8f3e !important;
 	background-color: #fff !important;
 }
+.green .nav-inside-content li a:link,
+.green .nav-inside-content li a:hover, 
+.green .nav-inside-content li a:active,
+.green .nav-inside-content li a:visited,
 .green .section a:link,
 .green .section a:hover,
 .green .section a:active,
@@ -494,6 +430,13 @@ fieldset[disabled] .btn-purple.active {
 .green footer a:hover,
 .green footer a:active,
 .green footer a:visited{
-	color: #3e8f3e;
+	color: #3e8f3e !important;
 	text-decoration: none;
+} 
+.green .karmafm{
+	size: 24px;
+	padding-top: 12px;
+	margin-bottom: 0;
+	color: #3e8f3e;
+	font-weight: bolder;
 }
