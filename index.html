@@ -13,18 +13,18 @@
   	<script src="js/handlebars-v4.0.5.js"></script>
   	<script src="js/script.js"></script>
 </head>
-<body>
+<body id="body">
 	<div class="container-fluid">
 		<div class="btn-group btn-group-justified" role="group">
 		<ul class="nav nav-tabs btn-group btn-group-justified smart-btn-width">
-			<li><a id="btn_muladh" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg" href="#">Понедельник</a></li>
-			<li><a id="btn_svadh" class="btn btn-warning smart-btn-width enabled dropdown-toggle btn-lg" href="#">Вторник</a></li>
-			<li><a id="btn_manip" class="btn btn-yellow smart-btn-width enabled dropdown-toggle btn-lg" href="#">Среда</a></li>
-			<li><a id="btn_anahata" class="btn btn-success smart-btn-width enabled dropdown-toggle btn-lg" href="#">Четверг</a></li>
+			<li><a id="btn_red" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg btn-red" href="#">Понедельник</a></li>
+			<li><a id="btn_svadh" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-orange" href="#">Вторник</a></li>
+			<li><a id="btn_manip" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-yellow" href="#">Среда</a></li>
+			<li><a id="btn_anahata" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-green" href="#">Четверг</a></li>
 		</ul>
 		</div>
 
-		<div id="content" class="container-fluid index-body">
+		<div id="content" class="container-fluid">
 			<div class="container index-header"><h1>Выбери день</h1></div>
 		</div>
 	</div>
@@ -36,11 +36,12 @@
 	</footer>
 
 	<script id="detail-template" type="text/x-handlebars-template">
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs nav-inside-content">
+			<li><span id="musicon" class="glyphicon glyphicon-play karmafm" style="size: 20px"></span><span class="karmafm">Карма FM&emsp;</span></li>
 			{{{navbar}}}
 		</ul>
-		<br><span id="musicon" class="glyphicon glyphicon-play" style="size: 20px"></span><span style="size: 20px">Карма FM</span>
-			<audio id="musplay" class="fm" src='{{fm}}' loop></audio>
+		<audio id="musplay" class="fm" src='{{fm}}' loop></audio>
+
 		<div id="section1" class="section1 container-fluid text-center sect-white"  style="border-bottom: 2px solid #f0f0f0;">
 			<div class="row">
 				{{{section1}}}
@@ -58,7 +59,7 @@
 		</div>
 		<script>		
 			$("#content").removeClass("index-body");
-			document.getElementById("content").className = "{{color}}";
+			document.getElementById("body").className = "{{color}}";
 			var sound = false;
 			$("#musicon").click(function(){
 				sound=!sound;
@@ -72,13 +73,13 @@
 		</script>
 	</script>
 	<script>
-		var muladhara = {
+		var red = {
 			navbar: '<li><a id="linktosection1" href="#section1">Диффуры</a></li><li><a id="linktosection2" href="#section2">Физика</a></li><li><a id="linktosection3" href="#section3">Философия</a></li>',
 			fm: "mp3/day1fm.mp3",
 			section1: '<div class="col-md-1"></div><div class="col-md-8"><p>"БЕРЁТЕ ЖЕЛЕЗНЫЙ ЛОМИК, ОБОРАЧИВАЕТЕ ТКАНЬЮ..."</p>Ключевую роль в сегодняшней практике по диффурам сыграл крепчающий неунывающий топографический кретинизм. Надо было всего-то преодолеть путь от Зябликово до университета: немного пройтись, посидеть на неудобных сиденьях, причинить настоявшимся утренним взглядом некоторое неудобство собратьям по вагону и ещё немного пройтись. Вышло из рук вон. Разбудить меня в семь утра после двух часов сна, сунуть в трясущиеся руки громоздкий багаж и отправить подышать подземным воздухом с самого начала казалось нежизнеспособной идеей. Так вот, дорогая сливушка, я опоздала на диффуры на 40 (сорок) минут, и, лишь только села за парту, задремала. <br>Таковы неутешительные итоги первой пары наступившего семестра.<br><br>Прилагаю <abbr title="Кликабельно!">материалы</abbr>, относящиеся к сегодняшней практике.<br>Решать сейчас не буду, соседка уже спит, да и мне хотелось бы, не обессудь.<br><br></div><div class="col-md-2"><a href="img/diff1.jpg" target="_blank"><img src="img/diff1.jpg"/></a></div><div class="col-md-1"></div><div class="col-md-2"><a href="img/diff2.jpg" target="_blank"><img src="img/diff2.jpg"/></a></div><div class="col-md-2"><a href="img/diff3.jpg" target="_blank"><img src="img/diff3.jpg"/></a></div><div class="col-md-2"><a href="img/diff4.jpg" target="_blank"><img src="img/diff4.jpg"/></a></div><div class="col-md-2"><a href="img/diff5.jpg" target="_blank"><img src="img/diff5.jpg"/></a></div><div class="col-md-2"><a href="img/diff6.jpg" target="_blank"><img src="img/diff6.jpg"/></a></div><div class="col-md-1"></div>',
 			section2: '<div class="row"><div class="col-md-1"></div><div class="col-md-10"><p>"ВОТ СКАЖИТЕ-КА МНЕ, МОЛОДОЙ ЧЕЛОВЕК, ДА-ДА, ВЫ..."</p><img src="img/phys1.png"/></div><div class="col-md-1"></div></div>',
 			section3: '<div class="row"><div class="col-md-1"></div><div class="col-md-5"><p>НУЖНЫ ЛИ МЫ НАМ?</p>Возможно, не самая мрачная страница истории, однако покрыта неизвестностью, как ломик тряпкой. Мы не знаем, что влияет на баллы, мы не знаем, чего ждать от аттестаций. Единственными данными нам инструкциями было: пишите конспект так, чтобы его было интересно перечитать, пишите в конспекте основные тезисы, пишите в конспекте своё отношение к сказанному мной, пишите в конспекте дату, название лекции, которое я, <a href="http://web-local.rudn.ru/web-local/prep/rj/?id=1780" title="Симакин Александр Георгиевич" target="_blank">хитрец</a>, вам ни за что не скажу, пишите в конспекте, главное, - пишите в конспекте. <br>Очень это важно.<br><br><br>Бонус — полный конспект Егора (версия без купюр и цензуры):<br><i>"Философия<br><br>Свобода — не произвол<br>Буржуазные извращения в квантовой механике<br>БРС: нужна тетрадь.<br>Писать число, тему лекции, основные мысли лекции<br>материалы для подготовки к семинарам<br><br>Польза от философии сомнительна, а вред — очевиден"<br></i></div><div class="col-md-5 lect"><a href="img/phil1.jpg" target="_blank"><img src="img/phil1.jpg" style="max-height: 100%"/></a></div></div><div class="col-md-1"></div></div>',
-			color: 'muladhara',
+			color: 'red',
 		}
 		var svadhishthana = {
 			navbar: '<li><a id="linktosection1" href="#section1">Компьютерные сети</a></li><li><a id="linktosection2" href="#section2">Логическое программирование</a></li>',
@@ -108,8 +109,8 @@
 		var source = $("#detail-template").html();
 		var detail_template = Handlebars.compile(source);
 
-		$("#btn_muladh").click(function(){
-			var html = detail_template(muladhara);
+		$("#btn_red").click(function(){
+			var html = detail_template(red);
 			$("#content").html(html);
 		})
 		$("#btn_svadh").click(function(){

@@ -21,13 +21,161 @@
 }
 
 .index-header h1{
-	padding: 20% 0 24% 0;
+	padding: 16% 0 20% 0;
 	margin: auto;
+	height: 10%;
 	width: 70%;
-	color: #fff;
+	color: #131382;
 	text-align: center;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-	font-size: 6vmax;
+	font-size: 6.2vmax;
+}
+
+/*RED&WHITE mondays*/
+.btn-red{
+	color: #fff;
+  	background-image: none;
+	background-color: #c12e2a; 
+	border-color: #c12e2c;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
+}
+.btn-red.active {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-red[disabled],
+fieldset[disabled] .btn-red {
+	color: white;
+	box-shadow: none;
+	box-shadow: none;
+}
+.btn-red:hover,
+.btn-red:focus {
+	color: white;
+	background-color: #9c2522!important; 
+	border-color: #87201d!important;
+}
+.btn-red:active,
+.btn-red.active {
+	color: #fff;
+  	background-image: none;
+	background-color: #ffd700;
+	border-color: #b5a100;
+}
+.btn-red.disabled,
+.btn-red[disabled],
+fieldset[disabled] .btn-red,
+.btn-red.disabled:hover,
+.btn-red[disabled]:hover,
+fieldset[disabled] .btn-red:hover,
+.btn-red.disabled:focus,
+.btn-red[disabled]:focus,
+fieldset[disabled] .btn-red:focus,
+.btn-red.disabled.focus,
+.btn-red[disabled].focus,
+fieldset[disabled] .btn-red.focus,
+.btn-red.disabled:active,
+.btn-red[disabled]:active,
+fieldset[disabled] .btn-red:active,
+.btn-red.disabled.active,
+.btn-red[disabled].active,
+fieldset[disabled] .btn-red.active {
+	color: #fff;
+	background-color: #7e403e!important;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
+}
+.red .jumbotron{	
+	text-align: center;
+	color: #fff;
+	background-color: #c12e2a;
+	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
+}
+.red .nav-inside-content {
+	margin-bottom: 0;
+	z-index: 9999;
+	border: 0;
+	letter-spacing: 1px;
+	border-radius: 0;
+}
+.red .nav-inside-content li a:link,
+.red .nav-inside-content li a:hover, 
+.red .nav-inside-content li a:active,
+.red .nav-inside-content li a:visited,
+.red .sect-grey a:link,
+.red .sect-grey a:hover,
+.red .sect-grey a:active,
+.red .sect-grey a:visited,
+.red .sect-white a:link,
+.red .sect-white a:hover,
+.red .sect-white a:active,
+.red .sect-white a:visited,
+.red footer a:link,
+.red footer a:hover,
+.red footer a:active,
+.red footer a:visited{
+	color: #c12e2a !important;
+	text-decoration: none;
+} 
+.red .karmafm{
+	size: 1em;
+	padding-top: 12px;
+	margin-bottom: 0;
+	color: #c12e2a;
+	font-weight: bolder;
+}
+
+
+.btn-orange{
+	color: #fff;
+  	background-image: none;
+	background-color: #e38d13; 
+	border-color: #cc8013;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
+}
+.btn-orange.active {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-orange[disabled],
+fieldset[disabled] .btn-orange {
+	color: white;
+	box-shadow: none;
+	box-shadow: none;
+}
+.btn-orange:hover,
+.btn-orange:focus {
+	color: white;
+	background-color: #c97909!important; 
+	border-color: #b66d06!important;
+}
+.btn-orange:active,
+.btn-orange.active {
+	color: #fff;
+  	background-image: none;
+	background-color: #bb6e00;
+	border-color: #ba853a;
+}
+.btn-orange.disabled,
+.btn-orange[disabled],
+fieldset[disabled] .btn-orange,
+.btn-orange.disabled:hover,
+.btn-orange[disabled]:hover,
+fieldset[disabled] .btn-orange:hover,
+.btn-orange.disabled:focus,
+.btn-orange[disabled]:focus,
+fieldset[disabled] .btn-orange:focus,
+.btn-orange.disabled.focus,
+.btn-orange[disabled].focus,
+fieldset[disabled] .btn-orange.focus,
+.btn-orange.disabled:active,
+.btn-orange[disabled]:active,
+fieldset[disabled] .btn-orange:active,
+.btn-orange.disabled.active,
+.btn-orange[disabled].active,
+fieldset[disabled] .btn-orange.active {
+	color: #fff!important;
+	background-color: #ba853a!important;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
 
 .btn-yellow{
@@ -35,6 +183,7 @@
   	background-image: none;
 	background-color: #f0dd47; 
 	border-color: #f0d927;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
 .btn-yellow.active {
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
@@ -49,8 +198,8 @@ fieldset[disabled] .btn-yellow {
 .btn-yellow:hover,
 .btn-yellow:focus {
 	color: white;
-	background-color: #e9cf00; 
-	border-color: #d3be14;
+	background-color: #e9cf00!important; 
+	border-color: #d3be14!important;
 }
 .btn-yellow:active,
 .btn-yellow.active {
@@ -79,7 +228,62 @@ fieldset[disabled] .btn-yellow:active,
 fieldset[disabled] .btn-yellow.active {
 	color: #b5a100;
 	background-color: #fffd7b;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
 }
+
+.btn-green{
+	color: #fff;
+  	background-image: none;
+	background-color: #3e8f3e; 
+	border-color: #2f772f;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
+}
+.btn-green.active {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-green[disabled],
+fieldset[disabled] .btn-green {
+	color: white;
+	box-shadow: none;
+	box-shadow: none;
+}
+.btn-green:hover,
+.btn-green:focus {
+	color: white;
+	background-color: #407d40!important; 
+	border-color: #366f36!important;
+}
+.btn-green:active,
+.btn-green.active {
+	color: #fff;
+  	background-image: none;
+	background-color: #336633;
+	border-color: #275327;
+}
+.btn-green.disabled,
+.btn-green[disabled],
+fieldset[disabled] .btn-green,
+.btn-green.disabled:hover,
+.btn-green[disabled]:hover,
+fieldset[disabled] .btn-green:hover,
+.btn-green.disabled:focus,
+.btn-green[disabled]:focus,
+fieldset[disabled] .btn-green:focus,
+.btn-green.disabled.focus,
+.btn-green[disabled].focus,
+fieldset[disabled] .btn-green.focus,
+.btn-green.disabled:active,
+.btn-green[disabled]:active,
+fieldset[disabled] .btn-green:active,
+.btn-green.disabled.active,
+.btn-green[disabled].active,
+fieldset[disabled] .btn-green.active {
+	color: #b5a100;
+	background-color: #fffd7b;
+	cursor: url('../img/buddha.gif'), url('../img/buddha.cur'), auto;
+}
+
 .btn-purple{
 	color: #fff;
   	background-image: none;
@@ -178,41 +382,7 @@ fieldset[disabled] .btn-purple.active {
 	background-color: #fff!important;
 }
 
-/*RED&WHITE mondays*/
-.muladhara .jumbotron{	
-	text-align: center;
-	color: #fff;
-	background-color: #c12e2a;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-}
-.muladhara .navbar {
-	margin-bottom: 0;
-	background-color: #c12e2a;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.muladhara .navbar-nav li a:hover, 
-.muladhara .navbar-nav li a .active{
-	color: #c12e2a !important;
-	background-color: #fff !important;
-}
-.muladhara .sect-grey a:link,
-.muladhara .sect-grey a:hover,
-.muladhara .sect-grey a:active,
-.muladhara .sect-grey a:visited,
-.muladhara .sect-white a:link,
-.muladhara .sect-white a:hover,
-.muladhara .sect-white a:active,
-.muladhara .sect-white a:visited,
-.muladhara footer a:link,
-.muladhara footer a:hover,
-.muladhara footer a:active,
-.muladhara footer a:visited{
-	color: #c12e2a !important;
-	text-decoration: none;
-}
+
 
 /*ORANGE&WHITE tuesdays*/
 .svadhishthana .jumbotron{	
