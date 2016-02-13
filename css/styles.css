@@ -36,6 +36,19 @@
 	font-variant: small-caps;
 }
 
+.section{
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18px;
+	text-align: justify;
+	border-bottom: 2px solid #c6c6c6;
+}
+
+.section img{
+	max-width: 100%;
+}
+
 /*RED&WHITE mondays*/
 .btn-red{
 	color: #fff;
@@ -432,17 +445,6 @@ fieldset[disabled] .btn-purple.active {
 	}
 }
 
-.section{
-	background-color: #fff;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 18px;
-	text-align: justify;
-	border-bottom: 2px solid #c6c6c6;
-}
-.section img{
-	max-width: 100%;
-}
 
 
 .navbar li a, 
@@ -494,65 +496,4 @@ fieldset[disabled] .btn-purple.active {
 .green footer a:visited{
 	color: #3e8f3e;
 	text-decoration: none;
-}
-
-/*BLUE&WHITE fridays*/
-.vishuddha .jumbotron{
-	text-align: center;
-	color: #fff;
-	background-color: #2aabd2;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-}
-.vishuddha .navbar{
-	margin-bottom: 0;
-	background-color: #2aabd2;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.vishuddha .navbar-nav li a:hover, 
-.vishuddha .navbar-nav li .active a {
-	color: #2aabd2 !important;
-	background-color: #fff !important;
-}
-/*INDIGO&WHITE saturdays*/
-.ajna .jumbotron{
-	text-align: center;
-	color: #fff;
-	background-color: #337ab7;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-}
-.ajna .navbar {
-	margin-bottom: 0;
-	background-color: #337ab7;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.ajna .navbar-nav li a:hover, 
-.ajna .navbar-nav li .active a {
-	color: #337ab7 !important;
-	background-color: #fff !important;
-}
-/*PURPLE&WHITE sundays*/
-.sahasrara .jumbotron{
-	text-align: center;
-	color: #fff;
-	background-color: #42006a;
-	box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .025);
-	}
-.sahasrara .navbar {
-	margin-bottom: 0;
-	background-color: #42006a;
-	z-index: 9999;
-	border: 0;
-	letter-spacing: 1px;
-	border-radius: 0;
-}
-.sahasrara .navbar-nav li a:hover, 
-.sahasrara .navbar-nav li .active a {
-	color: #42006a !important;
-	background-color: #fff !important;
 }
