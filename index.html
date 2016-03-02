@@ -14,7 +14,7 @@
   	<script src="js/script.js"></script>
 </head>
 <body id="body" class="index-body">
-	<audio id="backgroundducky" src="mp3/Duckygirls.mp3" autoplay loop></audio>
+	<audio id="backgroundDucky" src="mp3/Duckygirls.mp3" autoplay loop></audio>
 	<div class="container-fluid">
 		<div id="dayChoise" class="btn-group btn-group-justified" role="group">
 			<ul class="nav nav-tabs btn-group btn-group-justified smart-btn-width">
@@ -74,9 +74,12 @@
 				sound=!sound;
 				$(this).toggleClass("glyphicon-pause");
 				if (sound){
+					document.getElementById("backgroundDucky").pause();
 					document.getElementById("musplay").play();
+
 				} else{
 					document.getElementById("musplay").pause();
+					document.getElementById("backgroundDucky").play();
 				}
 			});
 			$("#linktosection1").click(function(){
