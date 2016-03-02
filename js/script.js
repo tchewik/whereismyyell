@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	document.getElementById("backgroundDucky").play();
 		var red = {
 			task1: '<a id="linktosection1" href="#section1">Диффуры</a>',
 			task2: '<a id="linktosection2" href="#section2">Физика</a>',
