@@ -1,5 +1,5 @@
 function renderContent(index){
-	if (index) {
+	if (index != undefined) {
 		var arrayOfDays = dayList.days;
 		var source = $("#detail-template").html();
 		var detail_template = Handlebars.compile(source);
