@@ -12,20 +12,13 @@
 		  href="css/styles.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  	<script src="js/handlebars-v4.0.5.js"></script>
+  	<script src="js/handlebars-v3.0.3.js"></script>
+  	<script src="js/days.js"></script>
   	<script src="js/script.js"></script>
 </head>
 <body id="body" class="index-body">
-	<audio id="backgroundDucky" src="mp3/Duckygirls.mp3" autoplay loop></audio>
 	<div class="container-fluid">
-		<div id="dayChoise" class="btn-group btn-group-justified" role="group">
-			<ul class="nav nav-tabs btn-group btn-group-justified smart-btn-width">
-				<li><a id="btn_red" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg btn-red" href="#">Понедельник</a></li>
-				<li><a id="btn_svadh" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-orange" href="#">Вторник</a></li>
-				<li><a id="btn_manip" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-yellow" href="#">Среда</a></li>
-				<li><a id="btn_anahata" class="btn smart-btn-width enabled dropdown-toggle btn-lg btn-green" href="#">Четверг</a></li>
-			</ul>
-		</div>
+		<div id="header"></div>
 
 		<div id="content" class="container-fluid">
 			<div class="container index-header"><h1>Выбери день</h1></div>
@@ -34,6 +27,16 @@
 	
 	<br><footer class="container-fluid text-center footer">
 	</footer>
+
+	<script id="header-template" type="text/x-handlebars-template">
+		<div id="dayChoise" class="btn-group btn-group-justified" role="group">
+			<ul class="nav nav-tabs btn-group btn-group-justified smart-btn-width">
+				{{#each days}}
+					<li><a id="{{color}}" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg btn-{{color}}" href="" data-id="{{@index}}">{{nameofday}}</a></li>
+				{{/each}}
+			</ul>
+		</div>
+	</script>
 
 	<script id="detail-template" type="text/x-handlebars-template">
 		<ul class="nav nav-tabs nav-inside-content">
@@ -76,12 +79,9 @@
 				sound=!sound;
 				$(this).toggleClass("glyphicon-pause");
 				if (sound){
-					document.getElementById("backgroundDucky").pause();
 					document.getElementById("musplay").play();
-
 				} else{
 					document.getElementById("musplay").pause();
-					document.getElementById("backgroundDucky").play();
 				}
 			});
 			$("#linktosection1").click(function(){
@@ -103,7 +103,6 @@
 				$('html, body').stop().animate({
 					scrollTop: $("#dayChoise").offset().top
 				}, 600)
-				console.log("кликнула по стрелке");
 			});	
 		</script>
 	</script>
