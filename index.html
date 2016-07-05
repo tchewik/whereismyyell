@@ -32,7 +32,7 @@
 		<div id="dayChoise" class="btn-group btn-group-justified" role="group">
 			<ul class="nav nav-tabs btn-group btn-group-justified smart-btn-width">
 				{{#each days}}
-					<li><a id="{{color}}" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg btn-{{color}}" href="" data-id="{{@index}}">{{nameofday}}</a></li>
+					<li><a id="{{color}}" class="btn btn-danger smart-btn-width dropdown-toggle btn-lg btn-{{color}}" href="#" data-id="{{@index}}">{{nameofday}}</a></li>
 				{{/each}}
 			</ul>
 		</div>
@@ -41,9 +41,9 @@
 	<script id="detail-template" type="text/x-handlebars-template">
 		<ul class="nav nav-tabs nav-inside-content">
 			<li><span class="karmafm">&ensp;Карма FM&emsp;</span><span id="musicon" class="glyphicon glyphicon-play karmafm" style="size: 20px"></span></li>
-			<li id="linktosection1">{{{task1}}}</li>
-			<li id="linktosection2">{{{task2}}}</li>
-			<li id="linktosection3">{{{task3}}}</li>
+			{{#each tasks}}
+				<li id="linktosection{{@index}}"><a id="linktosection{{@index}}" href="#section{{@index}}">{{this}}</a></li>
+			{{/each}}
 		</ul>
 		<audio id="musplay" class="fm" src='{{fm}}' loop></audio>
 

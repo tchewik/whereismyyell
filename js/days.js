@@ -3,9 +3,9 @@ var dayList = {
 		{
 			nameofday: 'Понедельник',
 			tasks: [
-				'<a id="linktosection1" href="#section1">Диффуры</a>',
-				'<a id="linktosection2" href="#section2">Физика</a>',
-				'<a id="linktosection3" href="#section3">Философия</a>',
+				'Диффуры',
+				'Физика',
+				'Философия',
 			],
 			fm: "mp3/day1fm.mp3",
 			sections: [
@@ -18,8 +18,8 @@ var dayList = {
 		{
 			nameofday: 'Вторник',
 			tasks: [
-				'<a id="linktosection1" href="#section1">Компьютерные сети</a>',
-				'<a id="linktosection2" href="#section2">Логическое программирование</a>',
+				'Компьютерные сети',
+				'Логическое программирование',
 			],
 			fm: "mp3/day2fm.mp3",
 			sections: [
@@ -31,8 +31,8 @@ var dayList = {
 		{
 			nameofday: 'Среда',
 			tasks: [
-				'<a id="linktosection1" href="#section1">Java</a>',
-				'<a id="linktosection2" href="#section2">Естествознание</a>',
+				'Java',
+				'Естествознание',
 			],
 			fm: "mp3/day3fm.mp3",
 			sections: [
@@ -44,9 +44,9 @@ var dayList = {
 		{
 			nameofday: 'Четверг',
 			tasks: [
-				'<a id="linktosection1" href="#section1">Теория вероятностей</a>',
-				'<a id="linktosection2" href="#section2">Компьютерные сети</a>',
-				'<a id="linktosection3" href="#section3">Научное программирование</a>',
+				'Теория вероятностей',
+				'Компьютерные сети',
+				'Научное программирование',
 			],
 			fm: "mp3/day4fm.mp3",
 			sections: [

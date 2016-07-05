@@ -15,7 +15,6 @@ $(document).ready(function(){
 		$('#header').html(html);
 
 		renderContent();
-
 		$(".btn").click(function(){
 			var index = $(this).data("id");
 			renderContent(index);
